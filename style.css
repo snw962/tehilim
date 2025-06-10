@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    direction: rtl; /* כיוון ימין לשמאל */
+    text-align: right; /* יישור לימין */
+}
+
+.text-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    display: flex; /* כדי ליישר את תיבת הסימון והטקסט */
+    align-items: flex-start; /* יישור תיבת הסימון לראש הפסקה */
+}
+
+.text-section input[type="checkbox"] {
+    margin-left: 10px; /* רווח בין התיבה לטקסט */
+    margin-top: 5px; /* יישור אנכי קל */
+    flex-shrink: 0; /* מונע מתיבת הסימון להתכווץ */
+}
+
+.text-section label {
+    flex-grow: 1; /* מאפשר לתווית למלא את שאר המקום */
+    cursor: pointer; /* מראה שהטקסט לחיץ */
+}
+
+.text-section p {
+    margin: 0; /* הסרת שוליים ברירת מחדל של פסקה */
+}
+
+/* סגנון לטקסט כאשר תיבת הסימון מסומנת */
+.text-section input[type="checkbox"]:checked + label p {
+    color: gray; /* צבע הטקסט הופך לאפור */
+    background-color: #e0ffe0; /* רקע ירקרק בהיר */
+    text-decoration: line-through; /* קו חוצה על הטקסט */
+}
