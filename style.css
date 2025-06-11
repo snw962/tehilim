@@ -33,5 +33,4 @@ body {
 .text-section input[type="checkbox"]:checked + label p {
     color: gray; /* צבע הטקסט הופך לאפור */
     background-color: #e0ffe0; /* רקע ירקרק בהיר */
-    text-decoration: line-through; /* קו חוצה על הטקסט */
 }
